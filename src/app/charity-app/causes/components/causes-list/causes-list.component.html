@@ -1,0 +1,27 @@
+<h2 class="title-style-1">Our Causes
+  <span class="title-under"></span>
+</h2>
+
+<div class="row">
+  <div *ngFor="let need of needs" class="col-md-3 col-sm-6">
+    <div *ngIf="need" class="cause">
+      <img src="assets/images/causes/{{need.imageurl}}" alt="" class="cause-img">
+      <div *ngIf="false" class="progress cause-progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
+              style="width: 50%;">
+          {{need.amountReceived}} / {{need.amount}}
+        </div>
+      </div>
+      <h4 class="cause-title">
+        {{need.name}}
+      </h4>
+      <div class="cause-details">
+        {{need.description}}
+      </div>
+      <div class="btn-holder text-center">
+        <a class="btn btn-primary" (click)="donate(need)"> More Info</a>
+      </div>
+    </div>
+    <!-- /.cause -->
+  </div>
+</div>

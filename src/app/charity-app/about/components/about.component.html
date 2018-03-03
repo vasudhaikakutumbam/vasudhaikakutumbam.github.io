@@ -1,0 +1,24 @@
+<app-page-header [pageTitle]="pageTitle" [pageDescription]="pageDescription"></app-page-header>
+<div class="main-container">
+    <about-detail></about-detail>
+    <div *ngIf="false" class="container">
+        <div class="section-home about-us">
+            <div class="row">
+                <div class="col-sm-6">
+                    <about-mission></about-mission>
+                </div>
+                <div class="col-sm-6">
+                    <about-vission></about-vission>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class=row>
+                <div class="col-sm-8 col-sm-offset-2">
+                    <about-goal></about-goal>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+    <about-team-member *ngIf="false"></about-team-member>
+</div>

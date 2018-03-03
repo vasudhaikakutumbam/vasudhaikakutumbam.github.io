@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="board">
+    <!-- Navigation Area (Circular Tabs) -->
+    <signup-navbar [activeTab]="activeTab" [completedForms]="completedForms"></signup-navbar>
+    <!-- End Navigation Area (Circular Tabs) -->
+
+    <!-- Content Area -->
+    <div class="tab-content">
+      <signup-user-credentials *ngIf="userCredentialsVisibility" (userCredentialsCompleted)="showForms($event)"></signup-user-credentials>
+      <signup-personal *ngIf="personalVisibility" (personalCompleted)="showForms($event)"></signup-personal>
+      <signup-work *ngIf="workVisibility" (workCompleted)="showForms($event)"></signup-work>
+    </div>
+    <!-- End Content Area -->
+    {{formData | json}}
+  </div>
+</div>

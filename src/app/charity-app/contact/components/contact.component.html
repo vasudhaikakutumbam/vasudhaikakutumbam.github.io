@@ -1,0 +1,24 @@
+<app-page-header [pageTitle]="pageTitle" [pageDescription]="pageDescription"></app-page-header>
+<div class="main-container fadeIn animated">
+    <div class="container">
+        <div class="row">
+            <contact-detail></contact-detail>
+            <div class="col-sm-6 col-form contact-map">
+                <h2 class="title-style-2">Where we are
+                    <span class="title-under"></span>
+                </h2>
+                <p class="contact-address">
+                    Flat 403, Block - 2, Vertex Classic Buddha Homes,
+                    <br> Srila Park Pride (Near calavary temple),
+                    <br> Hydernagar, Hyderabad, Telangana - 500072.
+                </p>
+                <a class="btn btn-primary map-button" (click)="openGoogleMaps()">Get Directions</a>
+                <agm-map [zoom]="zoom" [latitude]="lat" [longitude]="lng" [mapTypeControl]="true">
+                    <agm-marker [latitude]="lat" [longitude]="lng">
+                    </agm-marker>
+                </agm-map>
+            </div>
+            <!-- <contact-form></contact-form> -->
+        </div>
+    </div>
+</div>

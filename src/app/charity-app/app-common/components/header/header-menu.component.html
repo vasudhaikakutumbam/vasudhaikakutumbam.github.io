@@ -1,0 +1,57 @@
+<div class="navbar-main">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                Vasudhaika Kutumbam
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav pull-right header-menu">
+                <li>
+                    <a routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}" routerLink="/">HOME</a>
+                </li>
+                <li routerLinkActive="is-active" class="has-child">
+                    <a routerLinkActive="is-active" routerLink="/causes">CAUSES</a>
+                    <ul class="submenu" *ngIf="false">
+                        <li class="submenu-item">
+                            <a href="#">Causes list </a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Single cause </a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Single cause </a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Single cause </a>
+                        </li>
+                    </ul>
+                </li>
+                <li *ngIf="false">
+                    <a routerLinkActive="is-active" href="#">GALLERY</a>
+                </li>
+                <li>
+                    <a routerLinkActive="is-active" routerLink="/about">ABOUT</a>
+                </li>
+                <li>
+                    <a routerLinkActive="is-active" routerLink="/contact">CONTACT</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav pull-right header-menu" *ngIf="false">
+                <li>
+                    <a routerLinkActive="is-active" routerLink="/login">Sign In</a>
+                </li>
+                <li>
+                    <a routerLinkActive="is-active" routerLink="/join">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
